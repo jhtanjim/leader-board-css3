@@ -102,6 +102,12 @@ s .top-players {
 /* ======================
       courses style
  ====================== */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
 .course .course-banner img {
     width: 266px;
     height: 141px;
@@ -109,6 +115,9 @@ s .top-players {
 
 .course-info {
     display: flex;
+
+    align-items: center;
+    justify-content: space-between;
 }
 
 .fa-star.filled {
@@ -117,4 +126,20 @@ s .top-players {
 
 .fa-star.empty {
     color: #AEAEAE;
+}
+
+.course-duration {
+    border: 1px;
+    height: 30px;
+    width:
+        94.83px;
+    background: #FFE4E8;
+    border-radius: 20px;
+
+}
+
+.fa-clock {
+    font-weight: 600;
+    font-size: 14.6913px;
+    color: #FF4A60;
 }
